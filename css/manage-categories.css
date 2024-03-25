@@ -1,0 +1,62 @@
+/* Manage Categories Page Styles */
+#category-list {
+    float: left;
+    width: 30%;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#category-list h2 {
+    margin-top: 0;
+}
+
+#category-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#category-list ul li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+#category-form {
+    float: right;
+    width: 65%;
+    padding: 20px;
+}
+
+#category-form h2 {
+    margin-top: 0;
+}
+
+#category-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#category-form form label {
+    margin-bottom: 10px;
+}
+
+#category-form form input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#category-form form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
