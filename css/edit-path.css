@@ -1,0 +1,42 @@
+/* Edit Path Page Styles */
+#map-container {
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+#map {
+    height: 100%;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+}
+
+#path-details {
+    margin-bottom: 20px;
+}
+
+#path-details h2 {
+    margin-top: 0;
+}
+
+#path-details form {
+    display: flex;
+    flex-direction: column;
+}
+
+#path-details form label {
+    margin-bottom: 10px;
+}
+
+#path-details form input,
+#path-details form select {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#path-details form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
