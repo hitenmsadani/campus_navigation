@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path Finder</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Path Finder</h1>
+    </header>
+
+    <main>
+        <section id="permissions">
+            <h2>Permissions</h2>
+            <button id="camera-permission-btn">Allow Camera Access</button>
+            <button id="location-permission-btn">Allow Location Access</button>
+        </section>
+
+        <section id="login">
+            <h2>Admin Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Path Finder. All rights reserved.</p>
+    </footer>
+
+    <script src="js/permissions.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
