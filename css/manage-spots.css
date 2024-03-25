@@ -1,0 +1,69 @@
+/* Manage Spots Page Styles */
+#spot-list {
+    float: left;
+    width: 30%;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#spot-list h2 {
+    margin-top: 0;
+}
+
+#spot-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#spot-list ul li {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+#spot-list ul li:hover {
+    background-color: #e0e0e0;
+}
+
+#spot-form {
+    float: right;
+    width: 65%;
+    padding: 20px;
+}
+
+#spot-form h2 {
+    margin-top: 0;
+}
+
+#spot-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#spot-form form label {
+    margin-bottom: 10px;
+}
+
+#spot-form form input,
+#spot-form form textarea,
+#spot-form form select {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#spot-form form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
