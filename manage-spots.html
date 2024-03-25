@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Spots</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/manage-spots.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Spots</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="manage-categories.html">Manage Categories</a></li>
+                <li><a href="edit-path.html">Edit Path</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="spot-list">
+            <h2>Spots</h2>
+            <ul>
+                <!-- Dynamically populate spot list -->
+            </ul>
+        </div>
+
+        <div id="spot-form">
+            <h2>Add Spot</h2>
+            <form>
+                <label for="spot-name">Spot Name:</label>
+                <input type="text" id="spot-name" name="spot-name" required>
+
+                <label for="spot-description">Description:</label>
+                <textarea id="spot-description" name="spot-description"></textarea>
+
+                <label for="spot-category">Category:</label>
+                <select id="spot-category" name="spot-category" required>
+                    <!-- Dynamically populate category options -->
+                </select>
+
+                <label for="spot-image">Image:</label>
+                <input type="file" id="spot-image" name="spot-image" accept="image/*" required>
+
+                <button type="submit">Add Spot</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/manage-spots.js"></script>
+</body>
+</html>
