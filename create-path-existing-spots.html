@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Path with Existing Spots</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/create-path.css">
+</head>
+<body>
+    <header>
+        <h1>Create Path with Existing Spots</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="create-path.html">Create Path</a></li>
+                <li><a href="capture-spots.html">Capture Spots</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <div id="existing-spots">
+            <h2>Existing Spots</h2>
+            <ul>
+                <!-- Dynamically populated existing spots -->
+            </ul>
+        </div>
+
+        <div id="path-details">
+            <h2>Path Details</h2>
+            <form>
+                <label for="path-name">Path Name:</label>
+                <input type="text" id="path-name" name="path-name" required>
+
+                <label for="start-spot">Starting Spot:</label>
+                <select id="start-spot" name="start-spot" required>
+                    <!-- Dynamically populated spot options -->
+                </select>
+
+                <label for="end-spot">Ending Spot:</label>
+                <select id="end-spot" name="end-spot" required>
+                    <!-- Dynamically populated spot options -->
+                </select>
+
+                <button type="submit">Create Path</button>
+            </form>
+        </div>
+
+        <div id="selected-spots">
+            <h2>Selected Spots</h2>
+            <ul>
+                <!-- Dynamically populated selected spots -->
+            </ul>
+        </div>
+    </main>
+
+    <script src="js/create-path-existing-spots.js"></script>
+</body>
+</html>
