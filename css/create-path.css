@@ -1,0 +1,66 @@
+/* Create Path Page Styles */
+#camera-feed {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#camera-feed video {
+    max-width: 100%;
+    height: auto;
+}
+
+#camera-feed button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#path-details {
+    margin-bottom: 20px;
+}
+
+#path-details h2 {
+    margin-top: 0;
+}
+
+#path-details form {
+    display: flex;
+    flex-direction: column;
+}
+
+#path-details form label {
+    margin-bottom: 10px;
+}
+
+#path-details form input,
+#path-details form select {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#path-details form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#captured-spots {
+    margin-bottom: 20px;
+}
+
+#captured-spots h2 {
+    margin-top: 0;
+}
+
+#captured-spots ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#captured-spots ul li {
+    margin-bottom: 10px;
+}
