@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Categories</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/manage-categories.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Categories</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="manage-spots.html">Manage Spots</a></li>
+                <li><a href="edit-path.html">Edit Path</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="category-list">
+            <h2>Categories</h2>
+            <ul>
+                <!-- Dynamically populate category list -->
+            </ul>
+        </div>
+
+        <div id="category-form">
+            <h2>Add Category</h2>
+            <form>
+                <label for="category-name">Category Name:</label>
+                <input type="text" id="category-name" name="category-name" required>
+
+                <button type="submit">Add Category</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/manage-categories.js"></script>
+</body>
+</html>
