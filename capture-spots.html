@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture Spots</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/capture-spots.css">
+</head>
+<body>
+    <header>
+        <h1>Capture Spots</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="create-path.html">Create Path</a></li>
+                <li><a href="create-path-existing-spots.html">Create Path with Existing Spots</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="camera-feed">
+            <video id="video" width="640" height="480" autoplay></video>
+            <button id="capture-btn">Capture Spot</button>
+        </div>
+
+        <div id="spot-details">
+            <h2>Spot Details</h2>
+            <form>
+                <label for="spot-name">Spot Name:</label>
+                <input type="text" id="spot-name" name="spot-name" required>
+
+                <label for="spot-description">Description:</label>
+                <textarea id="spot-description" name="spot-description"></textarea>
+
+                <label for="spot-category">Category:</label>
+                <select id="spot-category" name="spot-category" required>
+                    <!-- Dynamically populated category options -->
+                </select>
+
+                <button type="submit">Save Spot</button>
+            </form>
+        </div>
+
+        <div id="captured-spots">
+            <h2>Captured Spots</h2>
+            <ul>
+                <!-- Dynamically populated captured spots -->
+            </ul>
+        </div>
+    </main>
+
+    <script src="js/camera.js"></script>
+    <script src="js/gps.js"></script>
+    <script src="js/capture-spots.js"></script>
+</body>
+</html>
