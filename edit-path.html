@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Path</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/edit-path.css">
+</head>
+<body>
+    <header>
+        <h1>Edit Path</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="manage-spots.html">Manage Spots</a></li>
+                <li><a href="manage-categories.html">Manage Categories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="map-container">
+            <!-- Open Street Map container -->
+            <div id="map"></div>
+        </div>
+
+        <div id="path-details">
+            <h2>Path Details</h2>
+            <form>
+                <label for="path-name">Path Name:</label>
+                <input type="text" id="path-name" name="path-name" required>
+
+                <label for="start-spot">Starting Spot:</label>
+                <select id="start-spot" name="start-spot" required>
+                    <!-- Dynamically populate spot options -->
+                </select>
+
+                <label for="end-spot">Ending Spot:</label>
+                <select id="end-spot" name="end-spot" required>
+                    <!-- Dynamically populate spot options -->
+                </select>
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/map.js"></script>
+    <script src="js/edit-path.js"></script>
+</body>
+</html>
