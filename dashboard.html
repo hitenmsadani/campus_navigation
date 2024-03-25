@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Path Finder</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="create-path.html">Create Path</a></li>
+                <li><a href="manage-spots.html">Manage Spots</a></li>
+                <li><a href="manage-categories.html">Manage Categories</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="path-list">
+            <h2>Paths</h2>
+            <ul>
+                <!-- Dynamically populated path list -->
+            </ul>
+        </section>
+
+        <section id="path-details">
+            <h2>Path Details</h2>
+            <div id="path-info">
+                <!-- Dynamically populated path details -->
+            </div>
+            <div id="path-map">
+                <!-- Open Street Map container -->
+                <div id="map"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Path Finder. All rights reserved.</p>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>
